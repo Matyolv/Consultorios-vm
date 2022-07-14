@@ -1,0 +1,415 @@
+*{
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+}
+
+/* Estilo todas las pags*/
+
+/* Estilo del header*/
+
+header{
+    background-color: yellowgreen;
+    align-items: center;
+        
+}
+
+header div {
+    text-align: center;
+    
+}
+
+.logoHeader{
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilo del menu*/
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    font-size: 1.5rem;
+        
+}
+
+nav ul li{
+    text-align: center;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    background-color: #546164;
+    border-radius: 1rem;
+    font-weight: bold;
+      
+}
+
+nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* Estilo del main*/
+
+main{
+    background-color: aqua;
+}
+
+h1{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area: h1;
+
+}
+
+
+/* Estilo del footer*/
+
+footer{
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textoFooter{
+    color: #546164;
+    font-size: 2rem;
+    margin-left: 0.2rem;
+    font-weight: bold;
+}
+
+
+footer div{
+    display: flex
+        
+}
+
+footer div img{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    width: 2rem;
+    
+    
+}
+
+/* Estilo index*/
+
+.fotoRecepcion{
+    display: none;
+    grid-area: fotoRecepcion;
+    padding-bottom: 2rem;
+}
+
+.mainIndex{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-template-areas: "h1"
+                         "fotoRecepcion"
+                         "irQuienes"
+                         "irEspecialidades"
+                         "irEstudios"
+                         "irContactos";
+
+    justify-items: center;
+       
+}
+
+.parrafoIndex{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.irQuienes{
+    grid-area: irQuienes;
+    
+}
+
+.irEspecialidades{
+    grid-area: irEspecialidades;
+}
+
+.irEstudios{
+    grid-area: irEstudios;
+}
+
+.irContactos{
+    grid-area: irContactos;
+}
+
+/* Estilo Quienes Somos*/
+
+.fotoConsul{
+    display: none;
+    grid-area: fotoConsul;
+    padding: 2rem;
+    
+}
+
+.mainQuienes{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr;
+    grid-template-areas: "h1"
+                         "fotoConsul"
+                         "divQuienes";
+
+    justify-items: center;
+
+}
+
+.divQuienes{
+    margin: 2rem;
+    
+}
+
+.parrafoQuienes{
+    
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+.listaQuienes{
+    margin-top: 2rem;
+    font-weight: bold;
+    
+}
+
+
+/* Estilo pages/Especialidades*/
+
+.mainEspecialidades{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: "h1"
+                         "hijoEspecialidades1"
+                         "hijoEspecialidades2"
+                         "hijoEspecialidades3"
+                         "hijoEspecialidades4";
+
+    justify-items: center;
+           
+}
+
+.hijoEspecialidades1{
+    grid-area: hijoEspecialidades1;
+    margin-bottom: 2rem;
+}
+
+.hijoEspecialidades2{
+    grid-area: hijoEspecialidades2;
+    margin-bottom: 2rem;
+}
+
+.hijoEspecialidades3{
+    grid-area: hijoEspecialidades3;
+    margin-bottom: 2rem;
+}
+
+.hijoEspecialidades4{
+    grid-area: hijoEspecialidades4;
+    margin-bottom: 2rem;
+}
+
+
+.parrafoEspecialidades{
+    
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+.listaEspecialidades{
+    margin-top: 1rem;
+    font-weight: bold;
+        
+}
+
+/* Estilos estudios y Practicas */
+
+.mainEstudios{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr;
+    grid-template-areas: "h1"
+                         "divEcografias"
+                         "divRadiografias";
+
+    justify-items: center;
+}
+
+.parrafoEstudios{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.divEcografias{
+    grid-area: divEcografias;
+    padding-bottom: 2rem;
+}
+
+.divRadiografias{
+    grid-area: divRadiografias;
+    padding-bottom: 2rem;
+}
+
+/* Estilos Contactos*/
+
+.padreContactos{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    font-size: 30px;
+}
+
+.formContactos{
+    border: 0px;
+}
+
+.hijoContactos{
+    padding-top: 20px;
+}
+
+/*media queries*/
+
+@media screen and (max-width:320px){
+    nav ul li{
+        font-size: 0.3rem;
+        
+    }
+
+    footer div img{
+        width: 0.8rem;
+    }
+
+    .parrafoQuienes{
+        font-size: 1rem;
+    }
+
+    .listaQuienes{
+        font-size: 1rem;
+    }
+
+    .parrafoEspecialidades{
+        font-size: 1rem;
+    }
+    .listaEspecialidades{
+        font-size: 1rem;
+    }
+
+    .parrafoEstudios{
+        font-size: 1rem;
+    }
+
+    iframe{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .textoFooter{
+        font-size: 1rem;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    nav ul{
+       font-size: 0.8rem;
+    }
+
+    nav ul li{
+        margin: 0%;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 100%;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    
+    
+    
+}
+    
+    
+
+@media screen and (min-width:1024px){
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+    .fotoRecepcion{
+        display: block;
+    }
+
+    nav ul{
+        font-size: 1rem;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    
+    .mainIndex{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
+        grid-template-areas: "h1 h1"
+                             "fotoRecepcion fotoRecepcion"
+                             "irQuienes irEspecialidades"
+                             "irEstudios irContactos";
+    
+        justify-items: center;
+    }
+
+    .fotoConsul{
+        display: block;
+    }
+
+    .mainEspecialidades{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 0.2fr 0.5fr 0.5fr;
+        grid-template-areas: "h1 h1"
+                             "hijoEspecialidades1 hijoEspecialidades2"
+                             "hijoEspecialidades3 hijoEspecialidades4";
+    
+        justify-items: center;
+    }
+
+    .mainEstudios{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 0.2fr 0.2fr;
+        grid-template-areas: "h1 h1"
+                             "divEcografias divRadiografias";
+            
+        justify-items: center;
+    }
+
+}    
