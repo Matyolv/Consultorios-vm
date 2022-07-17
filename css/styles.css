@@ -65,6 +65,13 @@ h1{
 
 }
 
+/*animacion para h1*/
+
+h1:hover{
+    color: yellowgreen;
+    font-size: 4rem;
+}
+
 
 /* Estilo del footer*/
 
