@@ -11,7 +11,12 @@
 header{
     background-color: yellowgreen;
     align-items: center;
-        
+            
+}
+
+header:hover{
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,121,11,1) 0%, rgba(0,212,255,1) 100%);
 }
 
 header div {
@@ -71,7 +76,6 @@ h1:hover{
     color: yellowgreen;
     font-size: 4rem;
 }
-
 
 /* Estilo del footer*/
 
@@ -135,6 +139,7 @@ footer div img{
     grid-area: irQuienes;
     
 }
+
 
 .irEspecialidades{
     grid-area: irEspecialidades;
