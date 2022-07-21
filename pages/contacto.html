@@ -7,105 +7,101 @@
     <link rel="stylesheet" href="../css/styles.css">
     <title>Contactos</title>
 
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     
     
 </head>
 <body>
 
-    <header>
-
-        <div>
-            <a href="index.html">
-            <img class="logoHeader" src="../assets/logo.png" alt="">
-            </a>
+    <header class="container-fluid">
+        <div class="row">
+            <img src="../assets/logo.png" class=" col-3 img-center" alt="imagen">
+            <nav class="navbar navbar-expand-lg col-9 fondo-nav">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="text-white nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="text-white nav-link" href="quienessomos.html">Quienes Somos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="text-white nav-link" href="especialidades.html">Especialidades</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="text-white nav-link" href="estudiosypracticas.html">Estudios y Practicas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="text-white nav-link" href="contacto.html">Contacto</a>
+                      </li>
+                      
+                      
+                    </ul>
+                    
+                  </div>
+                </div>
+              </nav>
         </div>
-
-       <nav class="menuHeader">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="quienessomos.html">Quienes Somos</a></li>
-                <li><a href="especialidades.html">Especialidades</li>
-                <li><a href="estudiosypracticas.html">Estudios y Practicas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                
-            </ul>
-        </nav>
     
     </header>
 
-    <main>
+    <main class="container-fluid">
 
-        <h1 class="titulo">Contactanos</h1>
+        <div class="row">
 
-        <div class="padreContactos">
+            <h1 class="col-12 text-center">Contactanos</h1>
 
-            <form action="" method="">
-                <fieldset class="formContactos">
-                    <legend> </legend>
-                    <div class="hijoContactos">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" placeholder="Completa tu nombre">
-                    </div>
-                
-                    <div class="hijoContactos">
-                        <label for="email">Correo electronico</label>
-                        <input type="email" name="email" placeholder="completa tu email">
-                    </div>
+        <div class="row pb-2">
 
-                    <div class="hijoContactos">
-                        <label for="tel">Telefono</label>
-                        <input type="tel" name="email" placeholder="completa tu telefono">
-                    </div>
-
-                    <div class="hijoContactos">
-                        <label for="prepga">Prepaga</label>
-                        <select name="prepaga" id="prepaga">
-                        <option value="1"></option>
-                        <option value="2">Osde</option>
-                        <option value="3">Galeno</option>
-                        <option value="4">Swiss Medical</option>
-                    </select>
-                    </div>
-
-                    <div class="hijoContactos">
-                    
-                        <input name="novedades" type="checkbox" />Recibir novedades
-
-                    </div>
-
-                    <div class="hijoContactos">
-                        <label for="Mensaje">Mensaje</label>
-                        <input type="Mensaje" name="Mensaje" placeholder="Escribe aqui tu mensaje">
-                    </div>
-                
-
-                    <div class="hijoContactos">
-                        <input type="submit" value="presione para enviar">
-                        <input type="reset" value="borrar todo">
-                    </div>
-
-
-                    
-                </fieldset>
-
-            </form>
+            <form class="col-5">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Telefono</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Recibir Novedades</label>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Mensaje</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                    <button type="submit" class="btn btn-primary">Presione para enviar</button>
+                </form>
         </div>
+        
     </main>
     
-    <footer>
-        <p class="textoFooter">Todos los derechos reservados®</p>
+    <footer class="container-fluid">
 
-        <div>
-            <a href="https://facebook.com">
-            <img src="../assets/facebook.png" alt="facebook">
-            </a>
-            <a href="https://instagram.com">
-            <img src="../assets/instagram.png" alt="instagram">
-            </a>
+        <div class="row pt-2">
+
+            <h2 class="col-12">Todos los derechos reservados®</h2>
 
         </div>
         
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
 </html>
