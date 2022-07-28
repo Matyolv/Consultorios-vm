@@ -1,0 +1,49 @@
+/* Estilo pages/Especialidades*/
+ 
+ .mainEspecialidades{
+     display: grid;
+     grid-template-columns: auto;
+     grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr;
+     grid-template-areas: "h1"
+                          "hijoEspecialidades1"
+                          "hijoEspecialidades2"
+                          "hijoEspecialidades3"
+                          "hijoEspecialidades4";
+ 
+     justify-items: center;
+            
+ }
+ 
+ .hijoEspecialidades1{
+     grid-area: hijoEspecialidades1;
+     margin-bottom: 2rem;
+ }
+ 
+ .hijoEspecialidades2{
+     grid-area: hijoEspecialidades2;
+     margin-bottom: 2rem;
+ }
+ 
+ .hijoEspecialidades3{
+     grid-area: hijoEspecialidades3;
+     margin-bottom: 2rem;
+ }
+ 
+ .hijoEspecialidades4{
+     grid-area: hijoEspecialidades4;
+     margin-bottom: 2rem;
+ }
+ 
+ 
+ .parrafoEspecialidades{
+     
+     font-size: 2rem;
+     font-weight: bold;
+     
+ }
+ 
+ .listaEspecialidades{
+     margin-top: 1rem;
+     font-weight: bold;
+         
+ }

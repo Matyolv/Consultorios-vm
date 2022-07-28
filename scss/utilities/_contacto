@@ -1,0 +1,19 @@
+/* Estilos Contactos*/
+ 
+ 
+ .padreContactos{
+     display: flex;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     padding-left: 50px;
+     font-size: 30px;
+}
+     
+.formContactos{
+    border: 0px;
+}
+ 
+.hijoContactos{
+    padding-top: 20px;
+}
+

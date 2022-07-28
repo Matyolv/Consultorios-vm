@@ -1,0 +1,27 @@
+/* Estilos estudios y Practicas */
+ 
+ .mainEstudios{
+     display: grid;
+     grid-template-columns: auto;
+     grid-template-rows: 0.2fr 0.2fr 0.2fr;
+     grid-template-areas: "h1"
+                          "divEcografias"
+                          "divRadiografias";
+ 
+     justify-items: center;
+ }
+ 
+ .parrafoEstudios{
+     font-size: 2rem;
+     font-weight: bold;
+ }
+ 
+ .divEcografias{
+     grid-area: divEcografias;
+     padding-bottom: 2rem;
+ }
+ 
+ .divRadiografias{
+     grid-area: divRadiografias;
+     padding-bottom: 2rem;
+ }

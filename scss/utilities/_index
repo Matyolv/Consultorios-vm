@@ -1,0 +1,47 @@
+/* Estilo index*/
+
+.mainIndex{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-template-areas: "h1"
+                          "fotoRecepcion"
+                          "irQuienes"
+                          "irEspecialidades"
+                          "irEstudios"
+                          "irContactos";}
+        
+
+    
+
+ 
+.fotoRecepcion{
+     display: none;
+     grid-area: fotoRecepcion;
+     padding-bottom: 2rem;
+}
+ 
+ 
+  
+ .parrafoIndex{
+     text-align: center;
+     padding-bottom: 2rem;
+ }
+ 
+ .irQuienes{
+     grid-area: irQuienes;
+     
+ }
+ 
+ .irEspecialidades{
+     grid-area: irEspecialidades;
+ }
+ 
+ .irEstudios{
+     grid-area: irEstudios;
+ }
+ 
+ .irContactos{
+     grid-area: irContactos;
+ }

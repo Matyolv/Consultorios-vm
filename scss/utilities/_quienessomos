@@ -1,0 +1,38 @@
+/* Estilo Quienes Somos*/
+ 
+ .fotoConsul{
+     display: none;
+     grid-area: fotoConsul;
+     padding: 2rem;
+     
+ }
+ 
+ .mainQuienes{
+     display: grid;
+     grid-template-columns: auto;
+     grid-template-rows: 0.2fr 0.2fr 0.2fr;
+     grid-template-areas: "h1"
+                          "fotoConsul"
+                          "divQuienes";
+ 
+     justify-items: center;
+ 
+ }
+ 
+ .divQuienes{
+     margin: 2rem;
+     
+ }
+ 
+ .parrafoQuienes{
+     
+     font-size: 2rem;
+     font-weight: bold;
+     
+ }
+ 
+ .listaQuienes{
+     margin-top: 2rem;
+     font-weight: bold;
+     
+ }
