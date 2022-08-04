@@ -1,0 +1,11 @@
+@mixin flex-menu{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+@mixin flex-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -26,8 +26,7 @@
  
  .parrafoQuienes{
      
-     font-size: 2rem;
-     font-weight: bold;
+    @extend %prop-parrafo;
      
  }
  

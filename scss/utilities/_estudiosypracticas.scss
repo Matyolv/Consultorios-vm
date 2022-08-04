@@ -1,6 +1,6 @@
 /* Estilos estudios y Practicas */
- 
- .mainEstudios{
+
+.mainEstudios{
      display: grid;
      grid-template-columns: auto;
      grid-template-rows: 0.2fr 0.2fr 0.2fr;
@@ -12,8 +12,7 @@
  }
  
  .parrafoEstudios{
-     font-size: 2rem;
-     font-weight: bold;
+    @extend %prop-parrafo;
  }
  
  .divEcografias{

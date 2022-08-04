@@ -1,15 +1,15 @@
 /* Estilo index*/
+.mainIndex {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: auto;
+  grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+  grid-template-areas: "h1" "fotoRecepcion" "irQuienes" "irEspecialidades" "irEstudios" "irContactos"; }
+
 .fotoRecepcion {
   display: none;
   grid-area: fotoRecepcion;
   padding-bottom: 2rem; }
-
-.mainIndex {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
-  grid-template-areas: "h1" "fotoRecepcion" "irQuienes" "irEspecialidades" "irEstudios" "irContactos";
-  justify-items: center; }
 
 .parrafoIndex {
   text-align: center;
@@ -51,10 +51,6 @@
   grid-area: hijoEspecialidades4;
   margin-bottom: 2rem; }
 
-.parrafoEspecialidades {
-  font-size: 2rem;
-  font-weight: bold; }
-
 .listaEspecialidades {
   margin-top: 1rem;
   font-weight: bold; }
@@ -66,10 +62,6 @@
   grid-template-rows: 0.2fr 0.2fr 0.2fr;
   grid-template-areas: "h1" "divEcografias" "divRadiografias";
   justify-items: center; }
-
-.parrafoEstudios {
-  font-size: 2rem;
-  font-weight: bold; }
 
 .divEcografias {
   grid-area: divEcografias;
@@ -95,10 +87,6 @@
 .divQuienes {
   margin: 2rem; }
 
-.parrafoQuienes {
-  font-size: 2rem;
-  font-weight: bold; }
-
 .listaQuienes {
   margin-top: 2rem;
   font-weight: bold; }
@@ -116,6 +104,10 @@
 
 .hijoContactos {
   padding-top: 20px; }
+
+.parrafoEspecialidades, .parrafoEstudios, .parrafoQuienes {
+  font-size: 2rem;
+  font-weight: bold; }
 
 * {
   padding: 0px;
@@ -156,13 +148,9 @@ main {
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-family: Arial, Helvetica, sans-serif;
     grid-area: h1; }
-
-h1:hover {
-  color: yellowgreen;
-  font-size: 4rem; }
 
 /* Estilo del footer*/
 footer {
@@ -201,7 +189,7 @@ footer {
   iframe {
     width: 100%; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .textoFooter {
     font-size: 1rem; }
   header {

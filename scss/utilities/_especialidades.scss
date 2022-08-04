@@ -1,5 +1,5 @@
 /* Estilo pages/Especialidades*/
- 
+
  .mainEspecialidades{
      display: grid;
      grid-template-columns: auto;
@@ -37,8 +37,7 @@
  
  .parrafoEspecialidades{
      
-     font-size: 2rem;
-     font-weight: bold;
+    @extend %prop-parrafo;
      
  }
  
