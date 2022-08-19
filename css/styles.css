@@ -4,7 +4,12 @@
   justify-items: center;
   grid-template-columns: auto;
   grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
-  grid-template-areas: "h1" "fotoRecepcion" "irQuienes" "irEspecialidades" "irEstudios" "irContactos"; }
+  grid-template-areas: "h1"
+ "fotoRecepcion"
+ "irQuienes"
+ "irEspecialidades"
+ "irEstudios"
+ "irContactos"; }
 
 .fotoRecepcion {
   display: none;
@@ -13,7 +18,8 @@
 
 .parrafoIndex {
   text-align: center;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  font-weight: bold; }
 
 .irQuienes {
   grid-area: irQuienes; }
@@ -32,7 +38,11 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr;
-  grid-template-areas: "h1" "hijoEspecialidades1" "hijoEspecialidades2" "hijoEspecialidades3" "hijoEspecialidades4";
+  grid-template-areas: "h1"
+ "hijoEspecialidades1"
+ "hijoEspecialidades2"
+ "hijoEspecialidades3"
+ "hijoEspecialidades4";
   justify-items: center; }
 
 .hijoEspecialidades1 {
@@ -60,7 +70,9 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 0.2fr 0.2fr 0.2fr;
-  grid-template-areas: "h1" "divEcografias" "divRadiografias";
+  grid-template-areas: "h1"
+ "divEcografias"
+ "divRadiografias";
   justify-items: center; }
 
 .divEcografias {
@@ -81,7 +93,9 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 0.2fr 0.2fr 0.2fr;
-  grid-template-areas: "h1" "fotoConsul" "divQuienes";
+  grid-template-areas: "h1"
+ "fotoConsul"
+ "divQuienes";
   justify-items: center; }
 
 .divQuienes {
@@ -223,7 +237,10 @@ footer {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
-    grid-template-areas: "h1 h1" "fotoRecepcion fotoRecepcion" "irQuienes irEspecialidades" "irEstudios irContactos";
+    grid-template-areas: "h1 h1"
+ "fotoRecepcion fotoRecepcion"
+ "irQuienes irEspecialidades"
+ "irEstudios irContactos";
     justify-items: center; }
   .fotoConsul {
     display: block; }
@@ -231,11 +248,14 @@ footer {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 0.2fr 0.5fr 0.5fr;
-    grid-template-areas: "h1 h1" "hijoEspecialidades1 hijoEspecialidades2" "hijoEspecialidades3 hijoEspecialidades4";
+    grid-template-areas: "h1 h1"
+ "hijoEspecialidades1 hijoEspecialidades2"
+ "hijoEspecialidades3 hijoEspecialidades4";
     justify-items: center; }
   .mainEstudios {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 0.2fr 0.2fr;
-    grid-template-areas: "h1 h1" "divEcografias divRadiografias";
+    grid-template-areas: "h1 h1"
+ "divEcografias divRadiografias";
     justify-items: center; } }
